@@ -5,7 +5,7 @@ const churchData = {
   service: {
     date: "Sunday, July 5, 2026",
     time: "10:00 AM",
-    location: "Main Sanctuary",
+    location: "Maharastra Mandal - Egmore",
     address: "123 Hope Street, Your City",
     directionsUrl: "https://maps.google.com/",
     messageTitle: "A Faith That Moves",
