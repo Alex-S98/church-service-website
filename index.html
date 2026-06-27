@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Sunday service schedule, worship songs, lyrics, announcements, and church links.">
+  <meta name="theme-color" content="#173f35"><title>Grace Church | Sunday Service</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css"><script src="data.js" defer></script><script src="script.js" defer></script>
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="#top"><span class="brand-mark">✦</span><span id="church-name-header">Grace Church</span></a>
+  <nav><a href="#service">Service</a><a href="#songs">Songs</a><a href="#announcements">News</a></nav>
+  <a class="button button-small" id="watch-live-header" href="#" target="_blank" rel="noreferrer">Watch live</a>
+</header>
+<main id="top">
+  <section class="hero">
+    <div class="hero-glow"></div>
+    <div class="hero-copy">
+      <p class="eyebrow">This Sunday · <span id="service-date"></span></p>
+      <h1>A place to<br><em>belong.</em></h1>
+      <p class="hero-intro" id="welcome-message"></p>
+      <div class="hero-actions"><a class="button" href="#service">View the service</a><a class="text-link" id="directions-link" href="#" target="_blank" rel="noreferrer">Get directions ↗</a></div>
+    </div>
+    <aside class="sunday-card">
+      <p class="card-label">Sunday gathering</p><p class="large-time" id="service-time"></p>
+      <div class="detail-row"><span>Location</span><strong id="service-location"></strong></div>
+      <div class="detail-row"><span>Message</span><strong id="message-title"></strong></div>
+      <div class="detail-row"><span>Speaker</span><strong id="speaker"></strong></div>
+    </aside>
+  </section>
+  <section class="section" id="service">
+    <div class="section-heading"><div><p class="eyebrow">Order of service</p><h2>Gather with us.</h2></div><p>Follow along with everything happening this Sunday.</p></div>
+    <ol class="schedule-list" id="schedule-list"></ol>
+  </section>
+  <section class="section songs-section" id="songs">
+    <div class="section-heading"><div><p class="eyebrow">Worship together</p><h2>This week’s songs.</h2></div><p>Select a song to read the lyrics during service.</p></div>
+    <div class="songs-layout"><div class="song-list" id="song-list" role="tablist"></div><article class="lyrics-panel" id="lyrics-panel" aria-live="polite"></article></div>
+  </section>
+  <section class="section" id="announcements">
+    <div class="section-heading"><div><p class="eyebrow">Church life</p><h2>What’s happening.</h2></div><p>Save the date, join a group, or find your next step.</p></div>
+    <div class="announcement-grid" id="announcement-grid"></div>
+  </section>
+  <section class="connect-section">
+    <div><p class="eyebrow light">Stay connected</p><h2>Church doesn’t end on Sunday.</h2></div>
+    <div class="link-grid" id="link-grid"></div>
+  </section>
+</main>
+<footer>
+  <a class="brand footer-brand" href="#top"><span class="brand-mark">✦</span><span id="church-name-footer"></span></a>
+  <p id="footer-address"></p><p>© <span id="current-year"></span> <span id="church-name-copyright"></span></p>
+</footer>
+</body></html>
