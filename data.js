@@ -3,11 +3,11 @@ const churchData = {
   churchName: "Indian Church of Christ - Chennai",
   welcomeMessage: "Come as you are. Join us for worship, a message of hope, and a warm community growing in faith together.",
   service: {
-    date: "Sunday, July 5, 2026",
+    date: "Sunday, August 2, 2026",
     time: "10:00 AM",
     location: "Maharastra Mandal - Egmore",
-    address: "123 Hope Street, Your City",
-    directionsUrl: "https://maps.google.com/",
+    address: "Liberty Plaze - Nungabakkam",
+    directionsUrl: "https://maps.app.goo.gl/4dwhcK6LnvWZoJZBA",
     messageTitle: "A Faith That Moves",
     speaker: "Felix",
     schedule: [
@@ -37,9 +37,10 @@ const churchData = {
   ],
 
   announcements: [
-    { date: "JUL 12", category: "Family Time", title: "Church Family Lunch", description: "Stay after service for lunch, conversation, and plenty of good food. Everyone is welcome.", link: "#", linkText: "Learn more" },
-    { date: "JUL 18", category: "Youth", title: "Youth Worship Night", description: "An evening of worship, games, and encouragement for students from grades 7–12.", link: "#", linkText: "Sign up" },
-    { date: "EVERY WED", category: "Prayer", title: "Midweek Prayer", description: "Join us at 7:00 PM as we pray for our church, city, and one another.", link: "#", linkText: "View details" }
+    { date: "AUG 02", category: "Sermon", title: "Godly Family", description: "Sit together as families during the lesson", link: "#", linkText: "Learn more" },
+    { date: "AUG 15", category: "Church Olympics", title: "Church wide Sports", description: "A day full of sports and games", link: "#", linkText: "Register in games now" },
+    { date: "EVERY WED", category: "Prayer", title: "Midweek Prayer", description: "Join us at 7:00 PM as we pray for our church, city, and one another.", link: "#", linkText: "View details" },
+    { date: "August 28", category: "Conference", title: "Father Son Retreat", description: "Join Father Son Retreat to Rebuild the Relationship", link: "https://forms.gle/56MSgXNhYdAFD9z9A", linkText: "Register Now" }
   ],
 
   links: [

@@ -51,10 +51,10 @@ document.addEventListener("DOMContentLoaded", () => {
   if (songs.length) showSong(0);
 
   document.getElementById("announcement-grid").innerHTML = announcements.map(item =>
-    `<article class="announcement-card"><div class="announcement-meta"><span>${item.date}</span><span>${item.category}</span></div><h3>${item.title}</h3><p>${item.description}</p><a href="${item.link}">${item.linkText} <span>→</span></a></article>`
+      `<article class="announcement-card"><div class="announcement-meta"><span>${item.date}</span><span>${item.category}</span></div><h3>${item.title}</h3><p>${item.description}</p><a href="${item.link}" target="${item.link.startsWith("http") ? "_blank" : "_self"}" rel="noreferrer">${item.linkText} <span>→</span></a></article>`
   ).join("");
 
   document.getElementById("link-grid").innerHTML = links.map(item =>
-    `<a class="connect-link" href="${item.url}" target="${item.url.startsWith("http") ? "_blank" : "_self"}" rel="noreferrer"><span><strong>${item.label}</strong><small>${item.description}</small></span><span>↗</span></a>`
+      `<a class="connect-link" href="${item.url}" target="${item.url.startsWith("http") ? "_blank" : "_self"}" rel="noreferrer"><span><strong>${item.label}</strong><small>${item.description}</small></span><span>↗</span></a>`
   ).join("");
 });
